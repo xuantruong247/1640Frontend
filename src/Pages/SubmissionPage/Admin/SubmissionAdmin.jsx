@@ -106,7 +106,7 @@ const SubmissionAdmin = () => {
   return (
     <div
       style={{
-        height: "920px",
+        height: "",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -173,7 +173,7 @@ const SubmissionAdmin = () => {
           </div>
         ))}
       </div>
-      <div className="text-center text-2xl pb-4">
+      <div className="text-center text-2xl pb-4 my-[20px]">
         <button
           onClick={() => setCurrentPage(currentPage - 1)}
           disabled={currentPage === 1}

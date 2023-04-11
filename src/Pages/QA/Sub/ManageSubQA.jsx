@@ -40,34 +40,37 @@ const ManageSubQA = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-3">
+        <div className="col-md-2">
           <QAMenu />
         </div>
-        <div className="col-md-9">
+        <div className="col-md-10">
           <div className="">
-            <h5>Manage Submission</h5>
+            <div className="flex justify-between h-[60px] msm:my-[10px] px-[12px]">
+            <h5 className="my-0 leading-[60px] text-2xl msm:hidden">Manage Submission</h5>
             <NavLink to="/create-sub-QA">
-              <button className="btn btn-success m-2">New Submission</button>
+              <button className="btn btn-success m-0">New Submission</button>
             </NavLink>
-            <div className="w-75">
+            </div>
+            
+            <div className="">
               <table className="table">
                 <thead>
-                  <tr>
-                    <th scope="col">Name</th>
+                  <tr className="">
+                    <th className="w-[100px]" scope="col">Name</th>
                     <th scope="col">Deadline 1</th>
                     <th scope="col">Deadline 2</th>
-                    <th scope="col">Action</th>
+                    <th className="w-[200px] text-center msm:w-[100px]" scope="col">Action</th>
                   </tr>
                 </thead>
                 <tbody>
                   {submission?.map((item, index) => (
                     <>
-                      <tr key={index}>
-                        <td>{item.name}</td>
+                      <tr key={index} className="">
+                        <td className="font-bold">{item.name}</td>
                         <td
                           className={
                             isDeadlineExpired(item.deadline_1)
-                              ? "text-red-500  font-normal"
+                              ? "text-red-500  font-bold"
                               : "text-black  font-normal"
                           }
                         >
@@ -78,7 +81,7 @@ const ManageSubQA = () => {
                         <td
                           className={
                             isDeadlineExpired(item.deadline_2)
-                              ? "text-red-500  font-normal"
+                              ? "text-red-500  font-bold"
                               : "text-black font-normal"
                           }
                         >
@@ -86,12 +89,12 @@ const ManageSubQA = () => {
                             "DD - MM - YYYY h:mm a"
                           )}
                         </td>
-                        <td>
+                        <td className="msm:w-[100px]">
                           <NavLink to={`/update-sub-QA/${item._id}`}>
-                            <button className="btn btn-primary">Edit</button>
+                            <button className="btn btn-primary w-[80px] msm:my-[6px] ml-0 msm:ml-[8px]">Edit</button>
                           </NavLink>
                           <button
-                            className="btn btn-danger ml-2"
+                            className="btn btn-danger w-[80px]  msm:ml-0"
                             onClick={() => {
                               deleteSub(item._id);
                             }}

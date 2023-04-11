@@ -43,7 +43,7 @@ const ManageUser = () => {
           <NavLink to="/create-user-admin">
             <button className="btn btn-success m-2">New User</button>
           </NavLink>
-          <div className="w-75">
+          <div className="">
             <table className="table">
               <thead>
                 <tr>
@@ -51,7 +51,7 @@ const ManageUser = () => {
                   <th scope="col">Phone</th>
                   <th scope="col">Email</th>
                   <th scope="col">Role</th>
-                  <th scope="col">Action</th>
+                  <th className="w-[200px] msm:w-[100px]" scope="col">Action</th>
                 </tr>
               </thead>
               <tbody>

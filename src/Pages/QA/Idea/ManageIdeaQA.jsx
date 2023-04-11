@@ -33,11 +33,11 @@ const ManageQA = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-3">
+        <div className="col-md-2">
           <QAMenu />
         </div>
-        <div className="col-md-9">
-          <h5>Manage Idea</h5>
+        <div className="col-md-10 ">
+          <h5 className=" text-2xl">Manage Idea</h5>
 
           <div className=" mt-3">
             <table className="table">
@@ -55,8 +55,8 @@ const ManageQA = () => {
                 {ideas?.map((item, index) => (
                   <tr key={index}>
                     <>
-                      <td>{item.title}</td>
-                      <td style={{ maxHeight: "200px", overflowY: "scroll" }}>
+                      <td className="font-bold">{item.title}</td>
+                      <td className="" style={{ maxHeight: "200px", overflowY: "scroll" }}>
                         {item.content}
                       </td>
                       <td>{item.desc}</td>

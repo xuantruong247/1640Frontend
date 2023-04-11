@@ -43,12 +43,12 @@ const ManageCategory = () => {
           <NavLink to="/create-category-admin">
             <button className="btn btn-success m-2">New Category</button>
           </NavLink>
-          <div className="w-75">
+          <div className="">
             <table className="table">
               <thead>
                 <tr>
                   <th scope="col">Name</th>
-                  <th scope="col">Action</th>
+                  <th className="w-[200px]" scope="col">Action</th>
                 </tr>
               </thead>
               <tbody>

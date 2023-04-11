@@ -49,14 +49,14 @@ const ManageSub = () => {
             <NavLink to="/create-sub-admin">
               <button className="btn btn-success m-2">New Submission</button>
             </NavLink>
-            <div className="w-75">
+            <div className="">
               <table className="table">
                 <thead>
                   <tr>
                     <th scope="col">Name</th>
                     <th scope="col">Deadline 1</th>
                     <th scope="col">Deadline 2</th>
-                    <th scope="col">Action</th>
+                    <th className="w-[200px] msm:w-[100px]" scope="col">Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -87,17 +87,20 @@ const ManageSub = () => {
                           )}
                         </td>
                         <td>
+                          <div className="flex flex-row msm:flex-col">
                           <NavLink to={`/update-sub/admin/${item._id}`}>
-                            <button className="btn btn-primary">Edit</button>
+                            <button className="btn btn-primary mx-[8px] w-[80px]">Edit</button>
                           </NavLink>
                           <button
-                            className="btn btn-danger ml-2"
+                            className="btn btn-danger mx-[8px] w-[80px]"
                             onClick={() => {
                               deleteSub(item._id);
                             }}
                           >
                             Delete
                           </button>
+                          </div>
+                          
                         </td>
                       </tr>
                     </>

@@ -9,7 +9,7 @@ module.exports = {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
-      'md': '769px',
+      'md': '768px',
       // => @media (min-width: 768px) { ... }
 
       'lg': '1024px',
@@ -23,8 +23,10 @@ module.exports = {
       'mlg': {'max': '1023px'},
       // => @media (max-width: 1023px) { ... }
 
-      'mmd': {'max': '768px'},
+      'mmd': {'max': '767px'},
       // => @media (max-width: 767px) { ... }
+
+      'mmdqa': {'max': '769px'},
 
       'msm': {'max': '640px'},
       // => @media (max-width: 639px) { ... }
