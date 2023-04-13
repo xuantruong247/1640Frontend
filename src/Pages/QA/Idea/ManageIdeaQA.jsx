@@ -56,8 +56,10 @@ const ManageQA = () => {
                   <tr key={index}>
                     <>
                       <td className="font-bold">{item.title}</td>
-                      <td className="" style={{ maxHeight: "200px", overflowY: "scroll" }}>
-                        {item.content}
+                      <td>
+                        {item.content.length > 100
+                          ? item.content.slice(0, 100) + "...etc"
+                          : item.content}
                       </td>
                       <td>{item.desc}</td>
                       <td>{item?.likes?.length || 0}</td>
