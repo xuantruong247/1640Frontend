@@ -20,8 +20,6 @@ const ListIdea = () => {
       const res = await axios.get(
         `http://localhost:8080/admin/submission/${id}`
       );
-      toast.success("ok");
-      console.log(res.data);
       setSubmission(res.data);
     } catch (error) {
       toast.error("Something went wrong");
