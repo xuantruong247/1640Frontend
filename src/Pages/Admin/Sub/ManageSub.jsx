@@ -40,10 +40,10 @@ const ManageSub = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-3">
+        <div className="col-span-12">
           <AdminMenu />
         </div>
-        <div className="col-md-9">
+        <div className="col-span-12 px-0">
           <div className="">
             <h5>Manage Submission</h5>
             <NavLink to="/create-sub-admin">
@@ -54,7 +54,7 @@ const ManageSub = () => {
                 <thead>
                   <tr>
                     <th scope="col">Name</th>
-                    <th scope="col">Deadline 1</th>
+                    <th className="sm:px-1 px-0" scope="col">Deadline 1</th>
                     <th scope="col">Deadline 2</th>
                     <th className="w-[200px] msm:w-[100px]" scope="col">Action</th>
                   </tr>
@@ -86,8 +86,8 @@ const ManageSub = () => {
                             "DD - MM - YYYY h:mm a"
                           )}
                         </td>
-                        <td>
-                          <div className="flex flex-row msm:flex-col">
+                        <td className="">
+                          <div className="flex flex-col sm:flex-row sm:flex">
                           <NavLink to={`/update-sub/admin/${item._id}`}>
                             <button className="btn btn-primary mx-[8px] w-[80px]">Edit</button>
                           </NavLink>

@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 const AdminMenu = () => {
   return (
     <>
-      <div className="text-center mb-6">
-        <div class="list-group">
+      <div className="text-center mb-6 ">
+        <div class="list-group flex flex-col">
           <NavLink
             to="/dashboard"
             className="list-group-item list-group-item-action"

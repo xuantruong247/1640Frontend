@@ -10,10 +10,10 @@ const Dashboard = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-3">
+        <div className="col-span-12">
           <AdminMenu />
         </div>
-        <div className="col-md-9">
+        <div className="col-span-12">
           <div className="flex flex-wrap">
             <div className="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
               <CardLineChart />

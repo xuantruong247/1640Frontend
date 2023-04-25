@@ -5,7 +5,7 @@ const QAMenu = () => {
   return (
     <>
       <div className="text-center">
-        <div class="list-group">
+        <div class="list-group flex flex-row">
           <NavLink
             to="/manage-idea-QA"
             className="list-group-item list-group-item-action"

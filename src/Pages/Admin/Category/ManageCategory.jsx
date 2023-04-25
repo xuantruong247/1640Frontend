@@ -35,10 +35,10 @@ const ManageCategory = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-3">
+        <div className="col-span-12">
           <AdminMenu />
         </div>
-        <div className="col-md-9">
+        <div className="col-span-12">
           <h5>Manage Category</h5>
           <NavLink to="/create-category-admin">
             <button className="btn btn-success m-2">New Category</button>

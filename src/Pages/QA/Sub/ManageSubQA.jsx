@@ -40,10 +40,10 @@ const ManageSubQA = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-2">
+        <div className="col-span-12 py-[10px]">
           <QAMenu />
         </div>
-        <div className="col-md-10">
+        <div className="col-span-12">
           <div className="">
             <div className="flex justify-between h-[60px] msm:my-[10px] px-[12px]">
             <h5 className="my-0 leading-[60px] text-2xl msm:hidden">Manage Submission</h5>
@@ -56,7 +56,7 @@ const ManageSubQA = () => {
               <table className="table">
                 <thead>
                   <tr className="">
-                    <th className="w-[100px]" scope="col">Name</th>
+                    <th className="w-[100px] gap-1" scope="col">Name</th>
                     <th scope="col">Deadline 1</th>
                     <th scope="col">Deadline 2</th>
                     <th className="w-[200px] text-center msm:w-[100px]" scope="col">Action</th>
@@ -89,7 +89,7 @@ const ManageSubQA = () => {
                             "DD - MM - YYYY h:mm a"
                           )}
                         </td>
-                        <td className="msm:w-[100px]">
+                        <td className="msm:w-[100px] gap-2">
                           <NavLink to={`/update-sub-QA/${item._id}`}>
                             <button className="btn btn-primary w-[80px] msm:my-[6px] ml-0 msm:ml-[8px]">Edit</button>
                           </NavLink>
